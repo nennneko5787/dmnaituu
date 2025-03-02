@@ -1,0 +1,3 @@
+twikit
+discord.py
+python-dotenv
