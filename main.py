@@ -15,7 +15,6 @@ client = twikit.Client(language="ja-JP", proxy=os.getenv("proxy"))
 
 async def main():
     httpSession = aiohttp.ClientSession()
-    print(os.environ)
     webhook1 = discord.Webhook.from_url(os.getenv("webhook1"), session=httpSession)
     webhook2 = discord.Webhook.from_url(os.getenv("webhook2"), session=httpSession)
     webhook3 = discord.Webhook.from_url(os.getenv("webhook3"), session=httpSession)
