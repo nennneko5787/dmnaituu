@@ -4,8 +4,11 @@ import traceback
 
 import aiohttp
 import discord
+import dotenv
 import twikit
 from twikit.streaming import Topic
+
+dotenv.load_dotenv()
 
 client = twikit.Client(language="ja-JP", proxy=os.getenv("proxy"))
 
