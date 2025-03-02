@@ -7,7 +7,7 @@ import discord
 import twikit
 from twikit.streaming import Topic
 
-client = twikit.Client(language="ja-JP")
+client = twikit.Client(language="ja-JP", proxy=os.getenv("proxy"))
 
 
 async def main():
